@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+       <div class="registration-form">
+      <button type="button" onclick="openPopup()">1 Registration form</button>
+    <a href="supportProfile.html" > <button type="button" id="supportive">2 Customer Supportive blog</button></a>
+      <form id="popup">
+        <div class="regi">
+            <h3>-------------Registration Form--------------</h3>
+            <p >Create Your account in Simple steps</p>
+        </div>
+        <div class="names">
+            <input type="text" name="FistName" id="FirstName" placeholder="First Name">
+            <input type="text" name="LastName" id="LastName" placeholder="Last Name">
+        </div>
+        <div class="email-pass">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <input type="password" name="confirmPassword" id="confirmpassword" placeholder="Confirm Password">
+        </div>
+        <div class="policy">
+        <input type="checkbox" name="confirm" id="confirm">I accept the terms of use & privacy policy
+        </div>
+        <div class="button">
+            <button type="button" onclick="closePopup()">Register Now</button>
+        </div>
+        <div class="login"> 
+        <p>Already having an account ..?</p><a href="#"> <span>Login here</span></a>
+          </div>
+        
+    </form>
+       </div>
+       </div>
+
+    <script>
+      let popup=document.getElementById("popup");
+
+      function openPopup(){
+        popup.classList.add("open-popup");
+      }
+      function closePopup(){
+        popup.classList.remove("open-popup");
+      }
+
+    </script>
+</body>
+</html>
